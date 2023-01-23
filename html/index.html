@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>IT-Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/color.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="../js/app.js"></script> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  
+
+       <div class="header    sticky bg-color-white  content-center">
+        <div class="logo">
+          <a href="#"><img src="../images/logo.png" height="50px" alt=""></a>  
+        </div>
+        <div class="topnav desktop" id="myTopnav">
+            <div class="topnav-links ">
+               
+                <a href="#home">Home</a>  
+                <a href="#new">New</a>
+                <a href="#team">Team</a>
+                <a href="#images">Images</a>
+                <a href="#key">keys</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#help">Help</a>
+              
+            </div>
+           
+        </div>
+        <div class="search f-right  flex-container content-center margin-left-5">
+            <div>
+                <form action="../php/action.php" method="post">
+                    <input type="search" name="search-bar" id="search-bar" placeholder="Search Here.." class="search-bar   "> 
+
+                </form>
+            </div>
+            <div onclick="search()">
+                <i class="material-icons cursor-pointer font-style-l " id="ser" >search</i>
+                <i class="material-icons cursor-pointer font-style-l " id="quit">close</i>
+            </div>  
+           
+        </div>
+        <div class="topnav mobile" id="myTopnavm">
+            <div class="topnav-links ">
+               
+                <a href="#home">E-Website</a>  
+                <a href="#new">New</a>
+                <a href="#team">Team</a>
+                <a href="#images">Images</a>
+                <a href="#key">keys</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#help">Help</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!-- <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> -->
+           
+        </div>
+    </div>
+   
+    <div class="body content">
+        <!--Appointement content   -->
+        <div class="appointement margin-bottom content-center flex-container" id="home">
+           
+                <div class="appointement-left-content div-inline width-50 color-white">
+                    <span class="margin-top-10 font-style-xl family-fira">Preparing For Your <br> Success, <br> We Provide Truly <br> Prominent IT Solutions</span>
+            </div>
+            <div class="appointement-right-content div-inline width-50 margin-top-2 color-white content-center">
+                <h3 class=" family-fira">Make An Appointement</h3>
+                <p class=" family-fira">Get in touch and discover how we can help. We aim <br> to be in touch</p>
+                <div class="user-form bg-color-blue">
+                    <form action="../php/action.php">
+                        <input type="text" name="name" id="name" height="100" class="form-style border-rad-50px margin-top-2 no-outline pad-left" placeholder="Enter Your Name"> <br>
+                        <input type="email" name="email" id="email" class="form-style border-rad-50px margin-top-2 no-outline pad-left" placeholder="Enter a Valid Email Address"> <br>
+                        <input name="msg" id="msg" placeholder="Enter your messgae here..." class= "form-style border-rad-50px margin-top-2 no-outline pad-left margin-bottom"> <br>
+                        <input type="submit" class="pad-btn no-outline bt-left white-btn cursor-pointer btn-fnt on-btn family-roboto" value="submit">
+                    </form>
+                </div> 
+                </div>  
+        </div>
+        <!--New Product Content-->
+        <div class="new-product margin-bottom content-center" id="new">
+            <span class="font-style-xl margin-left-1 family-fira">The New Product <br> Development Process</span>
+            <!-- new product cards..-->
+            <div class="new-product-cards ">
+                
+                <div class="cards-3 div-inline">
+                    <img src="../images/first.png" width="80px" height="80px" alt="paint-logo">
+                    <h3 class="family-fira">Reasearch user needs </h3>
+                    <p>Discover pain points and understand user behaviour</p>
+                </div>
+                <div class="cards-3 div-inline">
+                    <img src="../images/second.png"  width="80px" height="80px" alt="bulb-logo">
+                    <h3 class="family-fira">Idea Generation</h3>
+                    <p>Discover pain points and understand user behaviour </p>
+                </div>
+                <div class="cards-3 div-inline">
+                    <img src="../images/third.png"  width="80px" height="80px" alt="Cone-logo">
+                    <h3 class="family-fira">Prototype an idea</h3>
+                    <p>Discover pain points and understand user behaviour</p>
+                </div>
+             
+                <div class="cards-3 div-inline">
+                    <img src="../images/fourth.png" width="80px" height="80px" alt="pdropbox-logo">
+                    <h3 class="family-fira">Design a new product</h3>
+                    <p>Discover pain points and understand user behaviour</p>
+                </div>
+                <div class="cards-3 div-inline">
+                    <img src="../images/fifth.png"  width="80px" height="80px" alt="code-logo">
+                    <h3 class="family-fira">Sourcing</h3>
+                    <p>Discover pain points and understand user behaviour</p>
+                </div>
+                <div class="cards-3 div-inline">
+                    <img src="../images/sixth.png"  width="80px" height="80px" alt="rocket-logo">
+                    <h3 class="family-fira">Build Marketing plan</h3>
+                    <p>Discover pain points and understand user behaviour</p>
+                </div>
+                </div>
+            
+        </div>
+    
+        <!-- batches with some contents-->
+        <div class="batches margin-bottom" id="batch">
+            <div class="batch-buttons margin-bottom">
+                <span class="batch-button med-btn active on-btn  family-roboto" onclick="textChange('des')" id="des">Description</span>
+                <span class="batch-button  med-btn on-btn family-roboto" onclick="textChange('spec')" id="spec">Specfication</span>
+                <span class="batch-button  med-btn on-btn family-roboto" onclick="textChange('Rev')" id="Rev">Reviews</span>
+            </div>
+            <div class="margin-left-5 family-Patrick ">
+                <p id="print" >     
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+  from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one 
+  of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+   discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+   (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+    The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 
+  "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 
+  translation by H. Rackham.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+                    
+                </p>
+              
+                <ul>
+                  
+                    <!-- <li class="list-item"> some</li> -->
+                    <i class="fa-sharp fa-solid fa-check list-item"></i> <li class="list-item p">text1</li> <br>
+                    <i class="fa-sharp fa-solid fa-check list-item"></i> <li  class="list-item p">text2</li><br>
+                    <i class="fa-sharp fa-solid fa-check list-item"></i> <li  class="list-item p">text3</li>
+                   
+               </ul>
+            </div>
+               
+            <br>
+            <span class=" on-btn   cursor-pointer btn-fnt family-roboto" id="lm-btn">Learn More</span>
+        </div>
+        <!--Meet the Team -->
+        <div class="Team margin-bottom pad content-center bg-color-grey" id="team">
+            <span class="font-style-xl family-fira">Meet The Team </span>
+            <p>Image by Freepik</p>
+            <div class="Team-all-cards content-center flex-container    ">
+                <div class="team-top">
+                <div class="Team-card bg-color-white  card-styles ">
+                    <div class="Team-card-details bord-rad-6  flex-container ">
+                        <div >
+                            <img src="../images/A._P._J._Abdul_Kalam.jpg" width="100px" height="100px" class="img-rad-style" alt="user_profile">
+                        </div>
+                        <div>
+                            <h5 class="color-grey family-roboto">creative leader</h5>
+                            <h3 class="color-blue family-Titillium">Bob Brown</h3>
+                            <p class="family-fira">
+                                Glavi amet ritnisl libero molestie ante ut <br>
+                                fringilla purus eros quis glavrid from <br>
+                                dolor amet iquam lorem bibendum <br>
+                            </p>
+                            <i class="material-icons margin-left-5 color-blue cursor-pointer a" >facebook</i>
+                            <i class="material-icons margin-left-5 color-gery cursor-pointer a "> computer</i>
+                            <i class="material-icons margin-left-5 color-yellow cursor-pointer a  " >snapchat</i>
+                        </div>
+                    </div>
+                </div>  <br>
+                <div class="Team-card bg-color-white  card-styles   ">
+                    <div class="Team-card-details    bord-rad-6 flex-container" >
+                        <div>
+                            <img src="../images/jk.jpg"width="100px" height="100px" class="img-rad-style margin-top-2" alt="user_profile">
+                        </div>
+                        <div>
+                            <h5 class="color-grey family-roboto"> Sales Manager</h5>
+                            <h3  class="color-blue family-Titillium">Mary smith</h3>
+                             <p class="family-fira">
+                                Glavi amet ritnisl libero molestie ante ut <br>
+                                fringilla purus eros quis glavrid from <br>
+                                dolor amet iquam lorem bibendum <br>
+                            </p>
+                                <i class="material-icons margin-left-5 color-blue cursor-pointer a  " >facebook</i>
+                                <i class="material-icons margin-left-5 color-gery cursor-pointer a " > computer</i>
+                                <i class="material-icons margin-left-5 color-yellow cursor-pointer a  " >snapchat</i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              <br>
+                <div class="team-bottom">
+                <div class="Team-card  bg-color-white   card-styles ">
+                    <div class="Team-card-details  bord-rad-6 flex-container">
+                        <div>
+                            <img src="../images/js_A.jpg" width="100px" height="100px" class="img-rad-style" alt="user_profile">
+                        </div>
+                        <div>
+                            <h5 class="color-grey family-roboto">Manager</h5>
+                            <h3  class="color-blue family-Titillium">Jonh Rich</h3>
+                            <p class="family-fira">
+                                Glavi amet ritnisl libero molestie  <br>
+                                fringilla purus eros quis glavrid from  <br>
+                                dolor amet iquam lorem bibendum <br>
+                            </p>
+                            <i class="material-icons margin-left-5 color-blue cursor-pointer a " >facebook</i>
+                            <i class="material-icons margin-left-5 color-gery cursor-pointer a "> computer</i>
+                            <i class="material-icons margin-left-5 color-yellow cursor-pointer a " >snapchat</i>
+                        </div>
+                    </div>
+                </div>  <br>
+                <div class="Team-card   bg-color-white  card-styles  ">
+                    <div class="Team-card-details  bord-rad-6 flex-container">
+                        <div>
+                            <img src="../images/stan.jpg" width="100px" height="100px" class="img-rad-style" alt="user_profile">
+                        </div>
+                        <div>
+                            <h5 class="color-grey family-roboto">chief accountant</h5>
+                            <h3  class="color-blue family-Titillium">Nat Reynolds</h3>
+                            <p class="family-fira "  >
+                                Glavi amet ritnisl libero molestie ante ut <br>
+                                fringilla purus eros quis glavrid from <br>
+                                dolor amet iquam lorem bibendum <br>
+                            </p>
+                            <i class="material-icons margin-left-5 color-blue cursor-pointer a " >facebook</i>
+                            <i class="material-icons margin-left-5 color-gery cursor-pointer a "> computer</i>
+                            <i class="material-icons margin-left-5 color-yellow cursor-pointer a ">snapchat</i>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Displaying of  Images -->
+        <div class="display-img  margin-bottom content-center" id="images">
+            <span class="margin-left-1 ">
+                <img src="../images/img1.png" width="200px" height="280px"  alt="img1">
+            </span>
+            <span class="margin-left-1">
+                <img src="../images/img2.png" width="200px" height="280px" alt="img2">
+            </span>
+            <span class="margin-left-1" >
+                <img src="../images/img3.png" width="200px" height="280px"  alt="img3">
+            </span>
+            <span class="margin-left-1">
+                <img src="../images/img4.png" width="200px" height="280px"  alt="img4">
+            </span>
+
+        </div>
+        <!--Get Started ELement-->
+        <div class="Get-started bg-color-blue content-center pad" id="get">
+            <h3  class="color-white " >Get Started</h3>
+            <h2  class="color-white family-Titillium">Simple, Transparent Pricing</h2>
+            <h1  class="color-white family-fira free no-spaces">It's Free</h1>
+            <p  class="color-white">We're still in beta and we will be for awhile. As we add more <br>
+                functionality, we'll look into other plans with more controls
+            </p>
+            <button class="bg-color-white color-blue pad-btn no-outline   cursor-pointer btn-fnt on-btn family-roboto white-btn med-btn ">Get Started</button>
+            <p class="color-white">Copyright 2021 nicepage.com * <a href="" class="color-white a cursor-pointer ">Terms of Service </a>&nbsp; *<a href=""  class="color-white a"> Privacy Policy</a> </p>
+        </div>
+        <!--Key Features -->
+        <div class="key-features content-center margin-top-10 margin-bottom" id="key">
+            <span class="font-style-xl family-fira">Key Features</span>
+            <p>sample text. Click to select text box. Click again or double click to start editing the text. Image from <br> <a href="">Freepik</a> </p>
+           
+            <div class="key-features-bg  flex-container bg-color-white content-center ">
+                <div class="key-features bg-color-white width-200px box-style bord-rad-6">
+                   <img src="../images/projects.png" alt="project-img">
+                   <h3>Projects</h3>
+                   <h2 class="color-blue family-Titillium">100</h2>
+                </div>
+                <div class="key-features bg-color-white  width-200px box-style bord-rad-6">
+                    <img src="../images/clients.png" alt="clients-img">
+                    <h3>Clinets</h3>
+                    <h2 class="color-blue family-Titillium">80</h2>
+                </div>
+                <div class="key-features bg-color-white width-200px box-style bord-rad-6">
+                    <img src="../images/sites.png" alt="sites-img">
+                    <h3>6000+ Sites</h3>
+                    <h2 class="color-blue family-Titillium">6000</h2>
+                </div>
+                <div class="key-features bg-color-white width-200px box-style bord-rad-6">
+                    <img src="../images/gifts.png" alt="gifts-img">
+                    <h3>Giftes</h3>
+                    <h2 class="color-blue family-Titillium">76</h2>
+                </div>
+
+            </div>
+
+        </div>
+        <!--  Reviews of Customers-->
+        <div class="Reviews content-center bg-color-grey pad-eql margin-top-2 margin-bottom" id="reviews">
+            <span class="font-style-xl family-fira">Read what our customer say</span>
+            <div class="customer-review-cards flex-container content-center margin-top-2">
+                <div class="customer-card card-styles width-50 bg-color-white box-style">
+                    <i class="fa-solid fa-quote-left f-left font-style-xxlarg"></i> <br>
+                    <p class=" family-roboto ">
+                        Proin sed libero enim sed faucibus <br>
+                        imperdiet dui accumsan sit amet nulla facilisi <br>
+                        morbi tempus. Ut sem nulla phartra diam sit <br>
+                        amet nisi
+                    </p>
+                    <div class="flex-container margin-left-5 ">
+                        <div><img src="../images/jk.jpg" width="100px" height="100px" class="img-rad-style" alt="celia Almeda"></div>
+                        <div>
+                            <h3><b> Celia Almeda</b></h3>
+                            <p>CEO Company</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer-card card-styles width-50 bg-color-white box-style">
+                    <i class="fa-solid fa-quote-left f-left font-style-xxlarg"></i> <br>
+                    <p  class=" family-roboto">
+                        Proin sed libero enim sed faucibus <br>
+                        imperdiet dui accumsan sit amet nulla facilisi <br>
+                        morbi tempus. Ut sem nulla phartra diam sit <br>
+                        amet nisi
+                    </p>
+                    <div class="flex-container margin-left-5">
+                        <div><img src="../images/js_A.jpg" width="100px" height="100px" class="img-rad-style" alt="Frank kinney"></div>
+                        <div>
+                            <h3><b> Frank kinney</b></h3>
+                            <p>Financial Director</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           <button class="bg-color-blue color-white pad-btn no-outline a cursor-pointer margin-top-2 btn-fnt on-btn med-btn">Get Started</button>
+        </div>
+        <!--Need Help-->
+        <div class="need-help pad no-spaces" id="help">
+            <!-- <div class="need-help-card pad bg-color-white flex-cont box-style bord-rad-6 margin-top-2 margin-bottom  margin-left-5 ">
+                <div class="left margin-left-5">
+                    <span class="font-style-xl family-fira">Need Help?</span>
+                    <p class="color-grey margin-top-2">
+                        Our specialists will contact you for details <br>
+                        and clariifications. We'll be glad to help you <br>
+                        find the course
+                    </p>
+                    <span class="margin-top-2">
+                        <h2 class="fa-brands fa-facebook margin-left-5 a "></h2>
+                        <h2 class="fa-brands fa-instagram margin-left-5 a"></h2>
+                        <h2 class="fa-brands fa-twitter margin-left-5 a"></h2>
+                        <h2 class="fa-brands fa-google-plus margin-left-5 a"></h2>
+                    </span>
+                </div>
+                <div class="right margin-left-8 ">
+                    <form action="../php/action.php" >
+                        <div class="">
+                            <label for="Name">Name</label> <br>
+                            <input type="text" name="Name" id="Name" placeholder="Enter your Name" class="width-100 card-form no-outline bg-color-grey"> <br>
+                        </div>         
+                        <div class="right-items flex-container width-100">
+                            <div>
+                                <label for="phone">Phone</label> <br>
+                                <input type="text" name="phone" id="phone" placeholder="Enter your phone(e.g. !143)"  class="card-form no-outline bg-color-grey"> <br>
+                            </div>
+                            <div>
+                                <label for="email">Email</label> <br>
+                                <input type="email" name="email" id="email" placeholder="Enter your Email-ID"  class="card-form  no-outline bg-color-grey">
+                            </div>
+                        </div>
+                        <input type="submit" value="REQUEST CLARIFICATION" id="Request-btn" class="bg-color-blue a color-white pad-btn no-outline width-fill cursor-pointer btn-fnt on-btn" >
+                    </form>
+                </div>
+            </div> -->
+
+            <div class="need-help-card flex-container box-style bord-rad-6 bg-color-white pad ">
+                <div class="left-items  content-center">
+                    <span class="font-style-xl family-fira">Need Help?</span>
+                    <p class="color-grey margin-top-2 family-roboto">
+                        Our specialists will contact you for details <br>
+                        and clariifications. We'll be glad to help you <br>
+                        find the course
+                    </p>
+                    <span class="margin-top-2">
+                        <h2 class="fa-brands fa-facebook margin-left-5 a "></h2>
+                        <h2 class="fa-brands fa-instagram margin-left-5 a"></h2>
+                        <h2 class="fa-brands fa-twitter margin-left-5 a"></h2>
+                        <h2 class="fa-brands fa-google-plus margin-left-5 a"></h2>
+                    </span>
+                </div>
+                <div class="right-items">
+                    <form action="../php/action.php" >
+                        <div class="">
+                            <label for="Name" class="family-roboto">Name</label> <br>
+                            <input type="text" name="Name" id="Name" placeholder="Enter your Name" class="width-100 card-form no-outline bg-color-grey pad-left"> <br>
+                        </div>         
+                        <div class="right-items flex-cont pad-eql width-100">
+                            <div>
+                                <label for="phone" class="family-roboto">Phone</label> <br>
+                                <input type="text" name="phone" id="phone" placeholder="Enter your phone(e.g. !143)"  class="card-form no-outline bg-color-grey width-250px pad-left"> <br>
+                            </div>
+                            
+                            <div id="Email-al">
+                                <label for="email" class="family-roboto"  >Email</label> <br>
+                                <input type="email" name="email" id="email" placeholder="Enter your Email-ID"  class="card-form  no-outline bg-color-grey width-250px pad-left">
+                            </div>
+                        </div>
+                        <input type="submit" value="REQUEST CLARIFICATION" id="Request-btn" class="bg-color-blue  color-white blue-btn:hover pad-btn no-outline width-fill cursor-pointer btn-fnt on-btn family-roboto" >
+                    </form>
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+    <footer class="footer bg-color-black content-center" id="footer">
+        <p class="color-white">sample text. click to select the text box.</p>
+        <p class="color-white">Click again or double click to start editing the text</p> 
+    </footer>
+   
+</body>
+</html>
+ <!-- <div class="help-card bg-color-white">
+                <div class=".help-card-left">
+                    <span>Need Help ?</span>
+                    <p class="color-grey margin-top-2">
+                        Our specialists will contact you for details <br>
+                        and clariifications. We'll be glad to help you <br>
+                        find the course
+                    </p>
+                    <span class="margin-top-2">
+                        <h2 class="fa-brands fa-facebook margin-left-5 a "></h2>
+                        <h2 class="fa-brands fa-instagram margin-left-5 a"></h2>
+                        <h2 class="fa-brands fa-twitter margin-left-5 a"></h2>
+                        <h2 class="fa-brands fa-google-plus margin-left-5 a"></h2>
+                    </span>
+                </div>
+                <div class=".help-card-right">
+                    <form action="">
+                        Name :  <br>
+                        <input type="text" name=""  id="Name" class="card-form no-outline bg-color-grey" > <br>
+                        Phone :  
+                        <input type="text" name=""   class="card-form no-outline bg-color-grey">
+                        Email :  
+                        <input type="text" name=""   class="card-form no-outline bg-color-grey">  <br>
+                        <input type="button" value="REQUEST CLARIFICATION" class="bg-color-blue a color-white pad-btn no-outline width-fill cursor-pointer btn-fnt on-btn">
+                    </form>
+                </div>
+            </div> -->

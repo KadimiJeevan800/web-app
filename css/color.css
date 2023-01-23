@@ -1,0 +1,60 @@
+.color-blue
+{
+    color: rgb(38, 38, 125);
+}
+.color-white
+{
+    color: white;
+}
+.bg-color-blue
+{
+    background-color: #6e6edb;
+    text-align: center;
+}
+.bg-color-black
+{
+    background-color: black;
+    width: 100%;
+}
+.bg-color-white
+
+{
+    background-color: white;
+}
+.bg-color-grey
+{
+    background-color: rgb(226, 218, 218);
+}
+.color-gery
+{
+    color: rgb(158, 158, 158);
+}
+.color-yellow
+{
+    color: yellow;
+}
+
+.font-S
+{
+    font-size: small;
+}
+.font-m
+{
+    font-size: medium;
+}
+.font-l
+{
+    font-size: large;
+}
+.font-ll
+{
+    font-size: larger;
+}
+.font-xl
+{
+    font-size: x-large;
+}
+.font-xll
+{
+    font-size: xx-large;
+}
